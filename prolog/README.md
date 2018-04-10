@@ -18,7 +18,8 @@ ojciec(imię ojca,[imiona synów],[imiona córek]).
 matka(imię matki,[imiona synów],[imiona córek]).
 ```
 
-Przykładowe odpowiedzi programu:
+## Przykładowe odpowiedzi programu:
+
 ```
 kuzyn(krzysztof,norbert)  -> yes
 dziadek(edward,monika)    -> yes
