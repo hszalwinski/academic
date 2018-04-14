@@ -93,3 +93,8 @@ czy_matka(brak_danych,M,D):-not(osoba_istnieje_w_bazie(M));
 czy_matka(tak,M,D):-kobieta(M),rodzic(M,D).
 czy_matka(nie,M,D):-osoba_istnieje_w_bazie(D),
     kobieta(M),not(rodzic(M,D)).
+
+czy_siostra(brak_danych,S,R):-not(osoba_istnieje_w_bazie(S));
+    not(osoba_istnieje_w_bazie(R)).
+czy_siostra(tak,S,R):-siostra(S,R).
+czy_siostra(nie,S,R):-osoba_istnieje_w_bazie(R),not(siostra(S,R)).
